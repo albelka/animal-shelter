@@ -56,3 +56,15 @@ h3 {
   border-radius: 5px;
 
 }
+
+@media screen and (max-width:768px) {
+  body {
+    background: linear-gradient(to bottom, red, green, blue);
+  }
+}
+
+@media screen and (max-width:480px) {
+  body {
+    background: linear-gradient(to bottom, cyan, magenta, yellow, black);
+  }
+}
