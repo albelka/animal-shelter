@@ -1,7 +1,7 @@
 .column {
   float:left;
   border-right:1px solid gray;
-  width:300px;
+  width: 300px;
   padding: 12px;
 }
 
@@ -50,8 +50,15 @@ a:active {
   color: black;
 }
 
+p {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 .column p {
   font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h1 {
@@ -85,6 +92,22 @@ h3 {
   text-shadow: 0px 0px 10px white;
 }
 
+@media screen and (max-width:1331px) {
+  .column {
+    float: none;
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .centercolumns {
+    text-align: center;
+  }
+
+  #kittencolumn {
+    border-left: 0px;
+  }
+}
+
 @media screen and (max-width:768px) {
   body {
     background: linear-gradient(to bottom, red, green, blue);
@@ -94,5 +117,10 @@ h3 {
 @media screen and (max-width:480px) {
   body {
     background: linear-gradient(to bottom, cyan, magenta, yellow, black);
+  }
+
+  p {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
