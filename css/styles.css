@@ -15,15 +15,39 @@ body {
 
 a {
   background-color: black;
+  text-decoration: none;
+}
+
+a:link {
   color: orange;
 }
 
+a:visited {
+  color: orange;
+}
+
+a:hover {
+  color: white;
+}
+
+a:active {
+  color: pink;
+}
+
+#emailbutton {
+  text-align: center;
+}
+
+#kittencolumn {
+  border-left: 1px solid gray;
+}
+
 .column a {
-  background-color: yellow;
+  background-color: rgba(254, 241, 231, 1);
   filter: drop-shadow(2px 2px 2px black);
   border: 2px solid black;
   padding: 1px;
-  color: blue;
+  color: black;
 }
 
 .column p {
@@ -32,6 +56,9 @@ a {
 
 h1 {
   text-align: center;
+  border-bottom: 10px solid darkgreen;
+  font-family: serif;
+  font-weight: 1000;
 }
 
 h2 {
@@ -42,19 +69,20 @@ h2 {
 h3 {
   text-align: center;
   font-family: sans-serif;
-  font-weight: lighter;
+  font-weight: normal;
   line-height: 8px;
 }
 
 .column h2 {
   font-family: cursive;
+  font-size: 28px;
 }
 
 .titlebox {
   border: 3px solid green;
-  background-color: lightgreen;
+  background: url(../img/woodtexture.jpg), rgba(254, 241, 231, 1);
   border-radius: 5px;
-
+  text-shadow: 0px 0px 10px white;
 }
 
 @media screen and (max-width:768px) {
